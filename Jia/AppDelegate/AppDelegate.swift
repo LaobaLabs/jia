@@ -24,9 +24,9 @@ class AppDelegate : UIResponder, UIApplicationDelegate
     {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let group = JIAGroup(withName: "Chilcutts")
+//        let group = JIAGroup(withName: "Chilcutts")
         
-        let listVC = JIAGroupPeopleListViewController(withGroup: group)
+        let listVC = JIAGroupPeopleListViewController()//(withGroup: group)
         
         let navController = UINavigationController(rootViewController: listVC)
         navController.navigationBar.isTranslucent = false

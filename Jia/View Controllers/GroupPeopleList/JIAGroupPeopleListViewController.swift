@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EVCloudKitDao
 
 private let kJIAGroupPeopleListViewControllerAddPersonAlertTitle                            = "Add a Person"
 private let kJIAGroupPeopleListViewControllerAddPersonAlertMessage                          = "What is the person's name?"
@@ -16,7 +17,9 @@ class JIAGroupPeopleListViewController: UIViewController
 {
     //MARK: - Variables
     
-    private let group : JIAGroup
+//    private let group : JIAGroup
+    
+    private var people : [JIAPerson] = []
     
     private var addPersonAlertAction : UIAlertAction?
     
@@ -26,10 +29,10 @@ class JIAGroupPeopleListViewController: UIViewController
     
     //MARK: - Functions
     
-    init(withGroup givenGroup : JIAGroup)
+    init()//withGroup givenGroup : JIAGroup)
     {
-        group = givenGroup
-        
+//        group = givenGroup
+
         super.init(nibName: String(describing: JIAGroupPeopleListViewController.self),
                    bundle: nil)
     }
@@ -43,9 +46,47 @@ class JIAGroupPeopleListViewController: UIViewController
     {
         super.viewDidLoad()
         
-        self.title = self.group.name
+//        self.title = self.group.name
         
         self.setUpNavigationBar()
+        
+//        let predicate = NSPredicate(format: "name == %@", self.group.name)
+        let order = OrderBy(field: "name", direction: .ascending)
+        EVCloudData.publicDB.connect(JIAPerson(),
+                                     predicate: NSPredicate(value: true),
+                                     orderBy: order,
+                                     filterId: "JiaPerson_All",
+                                     cachingStrategy: .none,
+                                     postNotifications: true,
+        configureNotificationInfo:
+        { (notificationInfo) in
+                                        
+        },
+        completionHandler:
+        { (personsArray, completionStatus) -> Bool in
+            
+            return false
+        },
+        insertedHandler:
+        { (newPerson) in
+            self.people.append(newPerson)
+            self.tableView.reloadData()
+        },
+        updatedHandler:
+        { (updatedPerson, numberOfPeopleUpdated) in
+            self.tableView.reloadData()
+        },
+        deletedHandler:
+        { (deletedPersonId, numberOfPeopleDeleted) in
+            self.tableView.reloadData()
+        },
+        dataChangedHandler:
+        {
+            self.tableView.reloadData()
+        })
+        { (error) in
+            
+        }
     }
     
     private func setUpNavigationBar()
@@ -87,7 +128,8 @@ extension JIAGroupPeopleListViewController
             
             guard let textField = newPersonNameTextField, let name = textField.text else { return }
             let newPerson = JIAPerson(withName: name)
-            self.group.people.append(newPerson)
+
+            EVCloudData.publicDB.insert
             
             self.tableView.reloadData()
             
@@ -124,6 +166,11 @@ extension JIAGroupPeopleListViewController
             self.addPersonAlertAction?.isEnabled = false
         }
     }
+    
+    private func save(person : JIAPerson)
+    {
+        
+    }
 }
 
 //MARK: - UITableViewDataSource
@@ -132,7 +179,7 @@ extension JIAGroupPeopleListViewController : UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return self.group.people.count
+        return self.people.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -144,7 +191,7 @@ extension JIAGroupPeopleListViewController : UITableViewDataSource
             cell = UITableViewCell(style: .default, reuseIdentifier: "")
         }
         
-        let person = self.group.people[indexPath.row]
+        let person = self.people[indexPath.row]
         
         cell?.textLabel?.text = person.name
         
