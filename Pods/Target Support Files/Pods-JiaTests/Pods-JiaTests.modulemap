@@ -1,0 +1,6 @@
+framework module Pods_JiaTests {
+  umbrella header "Pods-JiaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

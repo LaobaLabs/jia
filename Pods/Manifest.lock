@@ -1,0 +1,22 @@
+PODS:
+  - EVCloudKitDao (3.5.2):
+    - EVReflection/CloudKit
+  - EVReflection/CloudKit (5.6.1):
+    - EVReflection/Core
+  - EVReflection/Core (5.6.1)
+
+DEPENDENCIES:
+  - EVCloudKitDao (= 3.5.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EVCloudKitDao
+    - EVReflection
+
+SPEC CHECKSUMS:
+  EVCloudKitDao: 0e65209efb535e49e8fe7d707a14190e5f92ac11
+  EVReflection: d05ebbafc851b7a4cd3d625182662463a5819ab8
+
+PODFILE CHECKSUM: f055910b1b8831e5e4b8ddd137514bc396ae1201
+
+COCOAPODS: 1.5.2

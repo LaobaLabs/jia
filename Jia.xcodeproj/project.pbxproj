@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E073D034EC0490C1E68CB20 /* Pods_Jia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C8031673C097D03BDD3A7 /* Pods_Jia.framework */; };
+		BE2544CF20AFB50A00A82AEF /* JIAPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2544CE20AFB50A00A82AEF /* JIAPerson.swift */; };
+		BE2544D120AFB53F00A82AEF /* JIAGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2544D020AFB53F00A82AEF /* JIAGroup.swift */; };
+		BE2544D320AFB5ED00A82AEF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2544D220AFB5ED00A82AEF /* CloudKit.framework */; };
 		BE9DBF3820AD2791000F8A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DBF3720AD2791000F8A32 /* AppDelegate.swift */; };
-		BE9DBF3A20AD2791000F8A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DBF3920AD2791000F8A32 /* ViewController.swift */; };
-		BE9DBF3D20AD2791000F8A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9DBF3B20AD2791000F8A32 /* Main.storyboard */; };
 		BE9DBF3F20AD2791000F8A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9DBF3E20AD2791000F8A32 /* Assets.xcassets */; };
 		BE9DBF4220AD2791000F8A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9DBF4020AD2791000F8A32 /* LaunchScreen.storyboard */; };
 		BE9DBF4D20AD2791000F8A32 /* JiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DBF4C20AD2791000F8A32 /* JiaTests.swift */; };
+		BE9DBF6120AD2DA1000F8A32 /* JIASignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DBF5F20AD2DA1000F8A32 /* JIASignInViewController.swift */; };
+		BE9DBF6220AD2DA1000F8A32 /* JIASignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9DBF6020AD2DA1000F8A32 /* JIASignInViewController.xib */; };
+		BE9DBF6620AD2DD0000F8A32 /* JIAAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DBF6520AD2DD0000F8A32 /* JIAAuthenticationManager.swift */; };
+		BE9DBF6820AD2DD9000F8A32 /* JIADataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DBF6720AD2DD9000F8A32 /* JIADataManager.swift */; };
+		BEC5A66D20B20092005A94F1 /* JIAGroupPeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5A66B20B20092005A94F1 /* JIAGroupPeopleListViewController.swift */; };
+		BEC5A66E20B20092005A94F1 /* JIAGroupPeopleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC5A66C20B20092005A94F1 /* JIAGroupPeopleListViewController.xib */; };
+		E8DE8894CD331D091E4733E3 /* Pods_JiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9030B7ADE1F4ED3C9576BD81 /* Pods_JiaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +35,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BEDC0BFEB0CED07F313EF50 /* Pods-Jia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jia/Pods-Jia.release.xcconfig"; sourceTree = "<group>"; };
+		9030B7ADE1F4ED3C9576BD81 /* Pods_JiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E2653DAAFDE52CE1AE492F /* Pods-JiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaTests/Pods-JiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2544CE20AFB50A00A82AEF /* JIAPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIAPerson.swift; sourceTree = "<group>"; };
+		BE2544D020AFB53F00A82AEF /* JIAGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIAGroup.swift; sourceTree = "<group>"; };
+		BE2544D220AFB5ED00A82AEF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		BE9DBF3420AD2791000F8A32 /* Jia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9DBF3720AD2791000F8A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE9DBF3920AD2791000F8A32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE9DBF3C20AD2791000F8A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9DBF3E20AD2791000F8A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9DBF4120AD2791000F8A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE9DBF4320AD2791000F8A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9DBF4820AD2791000F8A32 /* JiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9DBF4C20AD2791000F8A32 /* JiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaTests.swift; sourceTree = "<group>"; };
 		BE9DBF4E20AD2791000F8A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9DBF5720AD27AB000F8A32 /* Jia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jia.entitlements; sourceTree = "<group>"; };
+		BE9DBF5F20AD2DA1000F8A32 /* JIASignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIASignInViewController.swift; sourceTree = "<group>"; };
+		BE9DBF6020AD2DA1000F8A32 /* JIASignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JIASignInViewController.xib; sourceTree = "<group>"; };
+		BE9DBF6520AD2DD0000F8A32 /* JIAAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIAAuthenticationManager.swift; sourceTree = "<group>"; };
+		BE9DBF6720AD2DD9000F8A32 /* JIADataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIADataManager.swift; sourceTree = "<group>"; };
+		BEC5A66B20B20092005A94F1 /* JIAGroupPeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIAGroupPeopleListViewController.swift; sourceTree = "<group>"; };
+		BEC5A66C20B20092005A94F1 /* JIAGroupPeopleListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JIAGroupPeopleListViewController.xib; sourceTree = "<group>"; };
+		EB6C8031673C097D03BDD3A7 /* Pods_Jia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F676E77CD1470D878D7E64EF /* Pods-JiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaTests/Pods-JiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD71744C5B609896B1F9DE7D /* Pods-Jia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jia/Pods-Jia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2544D320AFB5ED00A82AEF /* CloudKit.framework in Frameworks */,
+				9E073D034EC0490C1E68CB20 /* Pods_Jia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +75,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DE8894CD331D091E4733E3 /* Pods_JiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE2544CC20AFB4C700A82AEF /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				BE2544CE20AFB50A00A82AEF /* JIAPerson.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		BE2544CD20AFB4CC00A82AEF /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				BE2544D020AFB53F00A82AEF /* JIAGroup.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		BE9DBF2B20AD2791000F8A32 = {
 			isa = PBXGroup;
 			children = (
 				BE9DBF3620AD2791000F8A32 /* Jia */,
 				BE9DBF4B20AD2791000F8A32 /* JiaTests */,
 				BE9DBF3520AD2791000F8A32 /* Products */,
+				BE9DBF5820AD27AF000F8A32 /* Frameworks */,
+				EE0D4F07BA28A31BD9562FD7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +121,12 @@
 		BE9DBF3620AD2791000F8A32 /* Jia */ = {
 			isa = PBXGroup;
 			children = (
-				BE9DBF3720AD2791000F8A32 /* AppDelegate.swift */,
-				BE9DBF3920AD2791000F8A32 /* ViewController.swift */,
-				BE9DBF3B20AD2791000F8A32 /* Main.storyboard */,
-				BE9DBF3E20AD2791000F8A32 /* Assets.xcassets */,
-				BE9DBF4020AD2791000F8A32 /* LaunchScreen.storyboard */,
-				BE9DBF4320AD2791000F8A32 /* Info.plist */,
+				BE9DBF5D20AD2B94000F8A32 /* Additional Files */,
+				BE9DBF5E20AD2BD8000F8A32 /* AppDelegate */,
+				BE9DBF6420AD2DB9000F8A32 /* AuthenticationManager */,
+				BE9DBF6320AD2DB4000F8A32 /* DataManager */,
+				BE9DBF5C20AD2B6E000F8A32 /* Objects */,
+				BE9DBF5B20AD2B5B000F8A32 /* View Controllers */,
 			);
 			path = Jia;
 			sourceTree = "<group>";
@@ -96,6 +140,130 @@
 			path = JiaTests;
 			sourceTree = "<group>";
 		};
+		BE9DBF5820AD27AF000F8A32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE2544D220AFB5ED00A82AEF /* CloudKit.framework */,
+				EB6C8031673C097D03BDD3A7 /* Pods_Jia.framework */,
+				9030B7ADE1F4ED3C9576BD81 /* Pods_JiaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE9DBF5B20AD2B5B000F8A32 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DBF6C20AD2EA8000F8A32 /* Assign Currency */,
+				BEC5A66A20B2005F005A94F1 /* GroupPeopleList */,
+				BE9DBF6A20AD2E6A000F8A32 /* Home */,
+				BE9DBF6D20AD2EAE000F8A32 /* Invite Person */,
+				BE9DBF6B20AD2E6F000F8A32 /* Settings */,
+				BE9DBF6920AD2E5D000F8A32 /* Sign In */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BE9DBF5C20AD2B6E000F8A32 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BE2544CD20AFB4CC00A82AEF /* Group */,
+				BE2544CC20AFB4C700A82AEF /* Person */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		BE9DBF5D20AD2B94000F8A32 /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DBF5720AD27AB000F8A32 /* Jia.entitlements */,
+				BE9DBF3E20AD2791000F8A32 /* Assets.xcassets */,
+				BE9DBF4020AD2791000F8A32 /* LaunchScreen.storyboard */,
+				BE9DBF4320AD2791000F8A32 /* Info.plist */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
+		BE9DBF5E20AD2BD8000F8A32 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DBF3720AD2791000F8A32 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BE9DBF6320AD2DB4000F8A32 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DBF6720AD2DD9000F8A32 /* JIADataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		BE9DBF6420AD2DB9000F8A32 /* AuthenticationManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DBF6520AD2DD0000F8A32 /* JIAAuthenticationManager.swift */,
+			);
+			path = AuthenticationManager;
+			sourceTree = "<group>";
+		};
+		BE9DBF6920AD2E5D000F8A32 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DBF5F20AD2DA1000F8A32 /* JIASignInViewController.swift */,
+				BE9DBF6020AD2DA1000F8A32 /* JIASignInViewController.xib */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		BE9DBF6A20AD2E6A000F8A32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BE9DBF6B20AD2E6F000F8A32 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BE9DBF6C20AD2EA8000F8A32 /* Assign Currency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Assign Currency";
+			sourceTree = "<group>";
+		};
+		BE9DBF6D20AD2EAE000F8A32 /* Invite Person */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Invite Person";
+			sourceTree = "<group>";
+		};
+		BEC5A66A20B2005F005A94F1 /* GroupPeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				BEC5A66B20B20092005A94F1 /* JIAGroupPeopleListViewController.swift */,
+				BEC5A66C20B20092005A94F1 /* JIAGroupPeopleListViewController.xib */,
+			);
+			path = GroupPeopleList;
+			sourceTree = "<group>";
+		};
+		EE0D4F07BA28A31BD9562FD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD71744C5B609896B1F9DE7D /* Pods-Jia.debug.xcconfig */,
+				3BEDC0BFEB0CED07F313EF50 /* Pods-Jia.release.xcconfig */,
+				B1E2653DAAFDE52CE1AE492F /* Pods-JiaTests.debug.xcconfig */,
+				F676E77CD1470D878D7E64EF /* Pods-JiaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE9DBF5120AD2791000F8A32 /* Build configuration list for PBXNativeTarget "Jia" */;
 			buildPhases = (
+				2EA110F3F533400376877D3E /* [CP] Check Pods Manifest.lock */,
 				BE9DBF3020AD2791000F8A32 /* Sources */,
 				BE9DBF3120AD2791000F8A32 /* Frameworks */,
 				BE9DBF3220AD2791000F8A32 /* Resources */,
+				C0D01BAC0675DE854A64F66D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE9DBF5420AD2791000F8A32 /* Build configuration list for PBXNativeTarget "JiaTests" */;
 			buildPhases = (
+				6619A1A5FE59E70A5764969B /* [CP] Check Pods Manifest.lock */,
 				BE9DBF4420AD2791000F8A32 /* Sources */,
 				BE9DBF4520AD2791000F8A32 /* Frameworks */,
 				BE9DBF4620AD2791000F8A32 /* Resources */,
@@ -141,12 +312,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Laoba Labs";
 				TargetAttributes = {
 					BE9DBF3320AD2791000F8A32 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					BE9DBF4720AD2791000F8A32 = {
 						CreatedOnToolsVersion = 9.2;
@@ -179,9 +358,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9DBF6220AD2DA1000F8A32 /* JIASignInViewController.xib in Resources */,
 				BE9DBF4220AD2791000F8A32 /* LaunchScreen.storyboard in Resources */,
+				BEC5A66E20B20092005A94F1 /* JIAGroupPeopleListViewController.xib in Resources */,
 				BE9DBF3F20AD2791000F8A32 /* Assets.xcassets in Resources */,
-				BE9DBF3D20AD2791000F8A32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +374,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EA110F3F533400376877D3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6619A1A5FE59E70A5764969B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D01BAC0675DE854A64F66D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Jia/Pods-Jia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EVCloudKitDao/EVCloudKitDao.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVCloudKitDao.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jia/Pods-Jia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE9DBF3020AD2791000F8A32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9DBF3A20AD2791000F8A32 /* ViewController.swift in Sources */,
+				BE2544CF20AFB50A00A82AEF /* JIAPerson.swift in Sources */,
+				BE9DBF6820AD2DD9000F8A32 /* JIADataManager.swift in Sources */,
+				BE2544D120AFB53F00A82AEF /* JIAGroup.swift in Sources */,
 				BE9DBF3820AD2791000F8A32 /* AppDelegate.swift in Sources */,
+				BE9DBF6120AD2DA1000F8A32 /* JIASignInViewController.swift in Sources */,
+				BE9DBF6620AD2DD0000F8A32 /* JIAAuthenticationManager.swift in Sources */,
+				BEC5A66D20B20092005A94F1 /* JIAGroupPeopleListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +467,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE9DBF3B20AD2791000F8A32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE9DBF3C20AD2791000F8A32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE9DBF4020AD2791000F8A32 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -256,6 +492,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -263,6 +500,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -313,6 +551,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -320,6 +559,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -351,14 +591,17 @@
 		};
 		BE9DBF5220AD2791000F8A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD71744C5B609896B1F9DE7D /* Pods-Jia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95FQZ6MNT2;
-				INFOPLIST_FILE = Jia/Info.plist;
+				INFOPLIST_FILE = "Jia/Additional Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laobalabs.Jia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,14 +609,17 @@
 		};
 		BE9DBF5320AD2791000F8A32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEDC0BFEB0CED07F313EF50 /* Pods-Jia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95FQZ6MNT2;
-				INFOPLIST_FILE = Jia/Info.plist;
+				INFOPLIST_FILE = "Jia/Additional Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laobalabs.Jia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +627,7 @@
 		};
 		BE9DBF5520AD2791000F8A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E2653DAAFDE52CE1AE492F /* Pods-JiaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +645,7 @@
 		};
 		BE9DBF5620AD2791000F8A32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F676E77CD1470D878D7E64EF /* Pods-JiaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
